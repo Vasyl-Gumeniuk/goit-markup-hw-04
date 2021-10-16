@@ -67,6 +67,8 @@ img {
 }
 .contact-item {
   margin-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px
 }
 .contact-item:first-child {
   margin-left: 0;
@@ -90,7 +92,7 @@ img {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+/* .site-nav .link.current {
   color: var(--accent-color);
 }
 .contact .link.current {
@@ -98,12 +100,10 @@ img {
 }
 .contact .contact-icon.current{
 fill: var(--accent-color);
-}
+} */
 .contact .link {
   display: inline-flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-family: "Roboto"
   font-style: normal;
@@ -540,9 +540,6 @@ fill: var(--accent-color);
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
-.filter-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-} 
 .filter-item > .filter.lessmargin {
   margin: 18px;
 }
@@ -554,6 +551,10 @@ fill: var(--accent-color);
   display: block;
   text-decoration: none;
 }
+.filter-item-link:hover,
+.filter-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} 
 /* Botton */
 .button {
   display: inline-block;
@@ -575,10 +576,10 @@ fill: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.buttons-list .button.current {
+/* .buttons-list .button.current {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-}
+} */
 /* Flex Buttons */
 .buttons-list .button.all {
   min-width: 73px;
